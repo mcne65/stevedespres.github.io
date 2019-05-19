@@ -20,12 +20,22 @@
         </a>
       </div>
     {% endif %}
-    {% if user.email %}
+    {% if site.social_media.email %}
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
+        <a href="mailto:{{ site.social_media.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          {{ site.social_media.email }}
         </a>
+      </div>
+      <div class="{{ metadata_styles }}">
+          {% octicon shield height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
+          <a href="/publickey - steve.despres@protonmail.com - 0xBCEEE36F.asc" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+            Clé PGP
+          </a>
+      </div>
+      <div class="{{ metadata_styles }}">
+          {% octicon organization height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
+            XMPP : {{ site.social_media.xmpp}}
       </div>
     {% endif %}
     {% if user.location %}
@@ -47,6 +57,11 @@
         {% endfor %}
       </div>
     {% endif %}
+    <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+        Buy me a tacos : 
+    </p>
+    <div id="tippin-button" data-dest="_SteveD"></div>
+    <script src="https://tippin.me/buttons/tip.js" type="text/javascript"></script>
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}

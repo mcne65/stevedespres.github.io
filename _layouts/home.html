@@ -1,7 +1,17 @@
 {% include header.html %}
 
+<h4>
+  <ul>
+      <li><a href="/" style="font-weight: bold">Accueil</a></li>
+        {% for page in site.pages_list %}
+          &nbsp;&nbsp;&nbsp;
+          <li><a href="{{ page[1]  }}">{{ page[0] }}</a></li>
+        {% endfor %}
+  </ul>
+</h4>
+
 {% if site.layout == 'stacked' %}
-  <div class="container-lg py-6 p-responsive text-center">
+  <div id="Home" class="container-lg py-6 p-responsive text-center">
     {% include masthead.html metadata=true %}
 
     <div {% if site.style == 'dark' %}class="text-white"{% endif %}>
@@ -26,6 +36,7 @@
   </div>
 {% else %}
   <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
+
     <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
       {% include masthead.html metadata=true %}
     </div>
@@ -36,17 +47,36 @@
           <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
             {{ content }}
           </div>
+
         {% endunless %}
 
-        {% include projects.html %}
+        <div id="Studies">
+          {% include studies.html %}
+        </div>
 
-        {% if site.topics %}
-          {% include interests.html %}
-        {% endif %}
+        <div id="Experiences">
+          {% include experiences.html %}
+        </div>
 
-        {% unless posts_total == 0 %}
-          {% include thoughts.html %}
-        {% endunless %}
+        <div id="Certifications">
+            {% include certifications.html %}
+          </div>
+
+        <div id="Interests">
+          {% if site.interests %}
+            {% include interests.html %}
+          {% endif %}
+        </div>
+
+        <div id="Projects">
+          {% include projects.html %}
+        </div>
+
+        <div id="Thoughts">
+          {% unless posts_total == 0 %}
+            {% include thoughts.html %}
+          {% endunless %}
+        </div>
       </div>
     </div>
   </div>
