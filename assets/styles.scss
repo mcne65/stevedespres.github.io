@@ -66,3 +66,15 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+#footer {
+  text-align: center;
+}
+ 
+#footer li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
