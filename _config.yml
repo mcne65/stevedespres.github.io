@@ -44,16 +44,15 @@ social_media:
    email: steve.despres@protonmail.com
    xmpp: steve@im.cyberjinh.fr
 
-
 interests:
+  - name: Blockchain
+    image_url: https://image.flaticon.com/icons/svg/1660/1660944.svg
+  
   - name: Nouvelles technologies
     image_url: https://image.flaticon.com/icons/svg/1238/1238790.svg
   
   - name: Informatique
     image_url: https://image.flaticon.com/icons/svg/123/123400.svg
-
-  - name: Blockchain
-    image_url: https://image.flaticon.com/icons/svg/1660/1660944.svg
 
   - name: Internet
     image_url: https://image.flaticon.com/icons/svg/1164/1164574.svg
@@ -64,76 +63,9 @@ interests:
   - name: Privacy
     image_url: https://image.flaticon.com/icons/svg/214/214343.svg
 
-
-studies:
-  - name: Ingénieur Système Automatisés et Génie Informatique - Polytech Angers 
-    date: 2015 - 2019
-    image: https://api.cge.asso.fr/uploads/ecole/logo//2/9/7/file//202_x_135_polytech-verti-angers.png
-  - name: D.U.T Génie Électrique et Informatique Industrielle - IUT Angers 
-    date: 2013 - 2015
-    image: https://www.inter-fairs.com/Content/img/Logos/46/4654/465427/default.jpg
-  - name: Baccalauréat Scientifique - Lycée Emmanuel Mounier, Angers 
-    date: 2013 - 2015
-    image: https://www.zupimages.net/up/19/20/b7fa.jpg
-
-experiences:
-  - name: Alternance - Développeur - Nameshield, Angers
-    date: 09/2018 - 08/2019 (1 an)
-    image: https://pbs.twimg.com/profile_images/903563701386698752/_Iu4hRLJ_400x400.jpg
-    description: Développement et maintenance d'applications Java / Php, Protection de marques, DNS, DNSSEC
-      
-  - name: Stage - Développeur Java - Thales, Cholet
-    date: 05/2018 - 08/2018 (4 mois)
-    image: https://www.ipgarde.com/wp-content/uploads/2017/03/thales.jpg
-    description: Développement d'une application Java, Spatialisation audio (OpenAL), Guerre Électronique
-
-  - name: Projet d'étude - Babyfoot connecté - Université d'Angers
-    date: 01/2018 - 04/2018 (3 mois)
-    image: https://pbs.twimg.com/profile_images/1059736489855205376/aLQTAalq_400x400.jpg
-    description: Mise an place de capteurs (Raspberry / Arduino), serveur NodeJS, application multi-plateformes (Ionic), étude Blockchain
-
-  - name: Stage - Communication Modbus entre Raspberry et Arduino - Escuela de Ingenieria de Bilbao, Espagne
-    date: 05/2017 - 08/2017 (3 mois)
-    image: https://www.climbat.com/bilbao/wp-content/uploads/sites/38/2017/10/cursos.jpg
-    description: Configuration Raspberry (Raspbian, C) / Arduino
-
-  - name: Stage - Développement Web & Mobile - Angers Info, Angers
-    date: 06/2016 - 07/2016 (1 mois)
-    image: https://pbs.twimg.com/profile_images/1125407929581154305/En9LpEKF_400x400.jpg
-    description: Mise à jour de fonctionnalités sur site web (Wordpress) et application Android (Java), Média local
-
-  - name: Stage - Développement Web & Mobile - Institut de Recherche, ESAIP, Angers
-    date: 06/2016 - 07/2016 (3 mois)
-    image: https://www.aurlom.com/js/tinymce/uploads/logo_esaip_ingenieur_rvb.png
-    description: Développement d'une plateforme Web (Php, Html, Js) pour la recherche scientifique
-
-certifications:
-  - name: Become a Blockchain Developer with Ethereum and Solidity - ChainSkills
-    url: https://www.udemy.com/getting-started-with-ethereum-solidity-development/
-    image: https://i0.wp.com/chainskills.com/wp-content/uploads/2016/07/ChainSkills-VerticalPositive.png
-
-  - name: Blockchain Foundations and Uses Cases - Consensys
-    url: https://www.coursera.org/account/accomplishments/verify/39MNU2BHQG6Y
-    image: https://pbs.twimg.com/profile_images/905114771556417536/gIC1NUG3_400x400.jpg
-
-  - name: Blockchain Essentials - IBM
-    url: https://www.youracclaim.com/badges/332a9086-3887-477a-afab-c04f216f7fa2/linked_in
-    image: https://images.youracclaim.com/images/c2137484-b8fa-4c38-b1ca-a2618a7360e9/Blockchain%2BEssentials.png
-
-  - name: MOOC Blockchain - Blockchain Partner
-    url: https://www.moocblockchain.com/17/mooc-blockchain-particuliers
-    image: https://pbs.twimg.com/profile_images/865964853495828481/ZXhnwj2r_400x400.jpg
-
-  - name: TOEIC - 845
-    url: /
-    image: https://bougetonq.com/wp-content/uploads/TOEIC.jpg
-
 kramdown:  
   parse_block_html: true
 
 pages_list:       
-  Formations: '#Studies'
-  Expériences: '#Experiences'
-  Certifications: '#Certifications'
   Centres d'intérêt: '#Interests'
   Projets: '#Projects'
